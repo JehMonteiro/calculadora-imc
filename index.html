@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <div class="container">
+        <div class="bloco">
+
+            <h1>Calculadora de IMC </h1>
+                <p>( Índice de Massa Corporal )</p>
+
+            <form onsubmit="return calcular(event)">
+                <div class="input">
+                    <label>Seu peso:</label>
+                    <input type="text" name="peso" id="peso"></input>
+                </div> 
+                <div class="input">
+                    <label>Sua altura:</label>
+                    <input type="text"  name="altura" id="altura"></input>
+                </div>
+                <input class="button" type="submit" value="Calcular IMC">
+            </form>
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+    body{
+        background-image: url(smile.png);
+        font-family: 'Nunito', sans-serif;
+    }
+    .container{
+        background-color: #fff;
+        border-radius: 30px;
+        width: 500px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+        margin: 0 auto;
+        margin-top: 50px
+    }
+    p{
+        font-size: 20px;
+    }
+    label{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+    }
+    .input input{
+        border-radius: 50px;
+        border: none;
+        border: 2px solid #FF66C4;
+        padding: 8px;
+        font-size: 18px;
+    }
+    .button{
+        background-color: #FF66C4;
+        border: none;
+        border: 7px solid #FCFF60;
+        border-radius: 30px;
+        margin: 50px 0; 
+        cursor: pointer;
+        font-size: 18px;
+    }
+    #resultado{
+        height: 100px;
+        margin-bottom: 100px;
+    }
+    
+</style>
