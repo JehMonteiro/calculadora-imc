@@ -34,6 +34,9 @@ label{
     padding: 8px;
     font-size: 18px;
 }
+.input input::placeholder{
+    color: rgba(148, 146, 146, 0.452);
+}
 .button{
     background-color: #FF66C4;
     border: none;
